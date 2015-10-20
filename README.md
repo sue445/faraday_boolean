@@ -5,6 +5,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 TODO: Delete this and the text above, and describe your gem
 
 [![Build Status](https://travis-ci.org/sue445/faraday_boolean.svg?branch=master)](https://travis-ci.org/sue445/faraday_boolean)
+[![Coverage Status](https://coveralls.io/repos/sue445/faraday_boolean/badge.svg?branch=master&service=github)](https://coveralls.io/github/sue445/faraday_boolean?branch=master)
 
 ## Installation
 
