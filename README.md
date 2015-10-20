@@ -1,8 +1,6 @@
 # FaradayBoolean
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/faraday_boolean`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Faraday response parser for boolean body
 
 [![Build Status](https://travis-ci.org/sue445/faraday_boolean.svg?branch=master)](https://travis-ci.org/sue445/faraday_boolean)
 [![Coverage Status](https://coveralls.io/repos/sue445/faraday_boolean/badge.svg?branch=master&service=github)](https://coveralls.io/github/sue445/faraday_boolean?branch=master)
@@ -25,7 +23,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+$ curl http://example.com/boolean/true
+true
+```
+
+```ruby
+require "faraday_boolean"
+
+connection =
+  Faraday.new(url: "http://example.com") do |conn|
+    conn.response :boolean
+    conn.adapter Faraday.default_adapter
+  end
+
+res = connection.get("/boolean/true")
+
+res.body
+#=> true
+
+res.body.class
+#=> TrueClass
+```
+
+If don't use `conn.response :boolean`, return `"true"` of `String` class
 
 ## Development
 
@@ -35,7 +56,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/faraday_boolean.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sue445/faraday_boolean.
 
 
 ## License
