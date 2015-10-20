@@ -1,5 +1,10 @@
 require "faraday_boolean/version"
+require "faraday"
 
 module FaradayBoolean
-  # Your code goes here...
+  autoload :ParseBoolean, "faraday_boolean/parse_boolean"
+
+  Faraday::Response.register_middleware(
+    boolean: -> { ParseBoolean },
+  )
 end
