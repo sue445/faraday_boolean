@@ -6,6 +6,7 @@ Faraday response parser for boolean body
 [![Build Status](https://travis-ci.org/sue445/faraday_boolean.svg?branch=master)](https://travis-ci.org/sue445/faraday_boolean)
 [![Coverage Status](https://coveralls.io/repos/sue445/faraday_boolean/badge.svg?branch=master&service=github)](https://coveralls.io/github/sue445/faraday_boolean?branch=master)
 [![Code Climate](https://codeclimate.com/github/sue445/faraday_boolean/badges/gpa.svg)](https://codeclimate.com/github/sue445/faraday_boolean)
+[![Dependency Status](https://gemnasium.com/sue445/faraday_boolean.svg)](https://gemnasium.com/sue445/faraday_boolean)
 
 ## Installation
 
