@@ -2,6 +2,7 @@
 
 Faraday response parser for boolean body
 
+[![Gem Version](https://badge.fury.io/rb/faraday_boolean.svg)](https://badge.fury.io/rb/faraday_boolean)
 [![Build Status](https://travis-ci.org/sue445/faraday_boolean.svg?branch=master)](https://travis-ci.org/sue445/faraday_boolean)
 [![Coverage Status](https://coveralls.io/repos/sue445/faraday_boolean/badge.svg?branch=master&service=github)](https://coveralls.io/github/sue445/faraday_boolean?branch=master)
 
