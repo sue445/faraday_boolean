@@ -51,6 +51,22 @@ res.body.class
 
 If don't use `conn.response :boolean`, return `"true"` of `String` class
 
+```ruby
+connection =
+  Faraday.new(url: "http://example.com") do |conn|
+    # conn.response :boolean
+    conn.adapter Faraday.default_adapter
+  end
+
+res = connection.get("/boolean/true")
+
+res.body
+#=> "true"
+
+res.body.class
+#=> String
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
