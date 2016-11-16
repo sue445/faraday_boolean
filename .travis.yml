@@ -11,6 +11,7 @@ before_script:
 - export CODECLIMATE_REPO_TOKEN=954ac3f52d68ad11cf8d56daff96a8f83390fa2e77c0c67a9919c04f0f5c658a
 script:
 - bundle exec rspec
+- bundle exec codeclimate-test-reporter
 branches:
   only:
   - master
