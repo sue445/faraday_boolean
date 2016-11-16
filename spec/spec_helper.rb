@@ -1,12 +1,8 @@
 if ENV["CI"]
   require "simplecov"
   require "coveralls"
-  require "codeclimate-test-reporter"
 
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-    CodeClimate::TestReporter::Formatter,
-    Coveralls::SimpleCov::Formatter
-  ]
+  SimpleCov.formatter = Coveralls::SimpleCov::Formatter
   SimpleCov.start do
     %w(spec).each do |ignore_path|
       add_filter(ignore_path)
@@ -115,8 +111,4 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-
-  config.before :each do
-    WebMock.disable_net_connect!(allow: "codeclimate.com")
-  end
 end
