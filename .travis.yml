@@ -5,7 +5,7 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
-  - 2.6.0
+  - 2.6
   - ruby-head
 cache: bundler
 sudo: false
@@ -29,6 +29,11 @@ notifications:
 matrix:
   allow_failures:
     - rvm: ruby-head
+  include:
+    - rvm: 2.6
+      env: RUBYOPT="--jit"
+    - rvm: ruby-head
+      env: RUBYOPT="--jit"
 env:
   global:
     - CC_TEST_REPORTER_ID=954ac3f52d68ad11cf8d56daff96a8f83390fa2e77c0c67a9919c04f0f5c658a
