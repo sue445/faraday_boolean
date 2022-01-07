@@ -14,6 +14,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/sue445/faraday_boolean"
   spec.license       = "MIT"
 
+  spec.required_ruby_version = ">= 2.6"
+
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/master/CHANGELOG.md"
@@ -24,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "faraday"
+  spec.add_dependency "faraday", ">= 2.0"
 
   spec.add_development_dependency "bundler", ">= 1.10"
   spec.add_development_dependency "coveralls"
