@@ -4,7 +4,7 @@
 ## v1.0.0
 [full changelog](http://github.com/sue445/faraday_boolean/compare/v0.1.1...v1.0.0)
 
-* :bomb: [BREAKING CHANGE] Support faraday v2+ and drop support ruby < 2.6
+* :bomb: **[BREAKING CHANGE]** Support faraday v2+ and drop support ruby < 2.6
   * https://github.com/sue445/faraday_boolean/pull/28
 
 ## v0.1.1
